@@ -1,0 +1,22 @@
+[
+  {
+    "name":"Turquoise",
+    "id":0,
+    "picture": "https://www.pngarts.com/files/2/Turquoise-Stone-PNG-Download-Image.png"
+  },
+  {
+    "name":"Malachite",
+    "id":1,
+    "picture": "https://www.pngarts.com/files/2/Malachite-PNG-Image.png"
+  },
+  {
+    "name":"Lapis Lazuli",
+    "id":2,
+    "picture": "https://www.pngarts.com/files/2/Lapis-Lazuli-Free-PNG-Image.png"
+  },
+  {
+    "name":"Quartz",
+    "id":3,
+    "picture": "https://i.pinimg.com/originals/7a/1e/8c/7a1e8cbae81363b96096b4c5d0971705.png"
+  }
+]
