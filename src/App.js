@@ -21,7 +21,7 @@ class App extends React.Component {
     this.setTarget()
   }
 
-  handleIncrement = (id, value) => {
+  handleScore = (id, value) => {
     this.setState({score: this.state.score + value})
     if (this.state.score > this.state.target) {
       let newLoses = this.state.loses + 1
@@ -59,7 +59,7 @@ class App extends React.Component {
               id={crystal.id}
               key={crystal.id}
               value={this.state.value[crystal.id]}
-              score={this.handleIncrement}
+              score={this.handleScore}
               />
             ))
           }
