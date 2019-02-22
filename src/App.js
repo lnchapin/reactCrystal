@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import CrystalPics from "./components/CrystalPictures";
 import Scores from "./components/Scores";
 import Header from "./components/Header"
@@ -7,7 +7,7 @@ import Data from "./components/HistoricData"
 import Wrapper from "./components/Wrapper"
 import './App.css';
 
-class App extends React.Component {
+class App extends Component {
   state = {
     crystals,
     score: 0,
