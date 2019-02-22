@@ -1,6 +1,6 @@
 import React from "react";
 
-function TargetScore(props) {
+function Data(props) {
   return (
     <div className="scoreValue">
       <h3>Wins: {props.wins}</h3>
@@ -9,4 +9,4 @@ function TargetScore(props) {
   )
 };
 
-export default TargetScore;
+export default Data;

@@ -1,6 +1,6 @@
 import React from "react";
 
-function TargetScore(props) {
+function Header() {
   return (
     <div className="header">
       <h1>Welcome to the Crystal Game</h1>
@@ -9,4 +9,4 @@ function TargetScore(props) {
   )
 };
 
-export default TargetScore;
+export default Header;
