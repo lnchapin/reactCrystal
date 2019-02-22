@@ -4,6 +4,7 @@ import Scores from "./components/Scores";
 import Header from "./components/Header"
 import crystals from "./crystals.json";
 import Data from "./components/HistoricData"
+import Wrapper from "./components/Wrapper"
 import './App.css';
 
 class App extends React.Component {
@@ -28,7 +29,7 @@ class App extends React.Component {
       this.setState({score: 0, loses: newLoses})
       this.updateValues()
       this.setTarget()
-    } else if (this.state.score == this.state.target){
+    } else if (this.state.score === this.state.target){
       let newWins = this.state.wins + 1
       this.setState({score: 0, wins: newWins})
       this.updateValues()
@@ -48,9 +49,10 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="container-fluid">
+      <div>
         <Header />
         <Scores target={this.state.target} score={this.state.score}/>
+        <Wrapper className="container-fluid">
           {
             this.state.crystals.map(crystal=> (
               <CrystalPics
@@ -63,6 +65,7 @@ class App extends React.Component {
               />
             ))
           }
+        </Wrapper>
         <Data wins={this.state.wins} loses={this.state.loses} />
       </div>
     )
