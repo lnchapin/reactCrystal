@@ -1,12 +1,16 @@
 import React from "react";
 
 function CrystalPics(props) {
-  return (
+  return(
     <div className="card">
-        <img className="card-img-top" onClick={()=>props.score(props.id, props.value)} alt={props.id}
-        value={10} src={props.image} />
+      <img className="card-img-top"
+        src={props.image}
+        alt={props.name}
+        value={props.value}
+        onClick={()=>props.score(props.id, props.value)}
+      />
     </div>
   )
-};
+}
 
-export default CrystalPics;
+export default CrystalPics
